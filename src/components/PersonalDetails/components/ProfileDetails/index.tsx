@@ -1,46 +1,15 @@
 import styles from "./styles.module.css";
-import profileImage from "../../assets/profileIcon.svg";
-import fbIcon from "../../assets/fb.svg";
-import xIcon from "../../assets/x.svg";
-import linkedinIcon from "../../assets/linkedin.svg";
-import githubIcon from "../../assets/linkedin.svg";
-import etcIcon from "../../assets/etc.svg";
+import profileImage from "../../../../assets/profileIcon.svg";
 import { IoIosStar } from "react-icons/io";
 import { FaFire } from "react-icons/fa";
 import { MdModeEditOutline } from "react-icons/md";
 import { SlOptionsVertical } from "react-icons/sl";
 
-import Button from "../Button";
+import Button from "../../../Button";
+import type { ProfileDetailsPropsType } from "./ProfileDetailsPropsTypes";
 
-const socialIcons = [
-  {
-    name: "facebook",
-    icon: fbIcon,
-    link: "https://www.facebook.com",
-  },
-  {
-    name: "twitter",
-    icon: xIcon,
-    link: "https://www.twitter.com",
-  },
-  {
-    name: "linkedin",
-    icon: linkedinIcon,
-    link: "https://www.linkedin.com",
-  },
-  {
-    name: "github",
-    icon: githubIcon,
-    link: "https://www.github.com",
-  },
-  {
-    name: "etc",
-    icon: etcIcon,
-    link: "https://www.etc.com",
-  },
-];
-
-export default function ProfileDetails() {
+export default function ProfileDetails(props: ProfileDetailsPropsType) {
+  const { socialIcons, isEdit, handleEditClick } = props;
   return (
     <div className={styles.profileDetailsContainer}>
       <div className={styles.profileDetails}>
@@ -68,19 +37,7 @@ export default function ProfileDetails() {
       </div>
       <div className={styles.profileActionsContainer}>
         <div className={styles.buttonContainer}>
-          <Button
-            // style={{
-            //   marginRight: "0.5rem",
-            //   color: "#E03131",
-            //   fontSize: "0.8rem",
-            //   fontWeight: 500,
-            //   backgroundColor: "#FCEAEA",
-            //   border: "1px solid #F6C1C1",
-            // }}
-            type="error"
-          >
-            Contact Linked
-          </Button>
+          <Button type="error">Contact Linked</Button>
           <Button
             style={{
               marginRight: "0.5rem",
@@ -99,8 +56,13 @@ export default function ProfileDetails() {
             style={{
               marginRight: "0.5rem",
             }}
+            onClick={handleEditClick}
           >
-            <MdModeEditOutline className={styles.buttonIcons} />
+            {isEdit ? (
+              <p style={{ margin: 0 }}>Submit</p>
+            ) : (
+              <MdModeEditOutline className={styles.buttonIcons} />
+            )}
           </Button>
           <Button
             style={{

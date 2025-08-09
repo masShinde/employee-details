@@ -1,8 +1,10 @@
 export interface ProfessionalDetail {
   keyName: string;
   value: string;
+  name: string;
 }
 
 export interface ProfessionalDetailsPropsType {
-  details?: ProfessionalDetail[];
+  details: ProfessionalDetail[];
+  isEdit?: boolean;
 }

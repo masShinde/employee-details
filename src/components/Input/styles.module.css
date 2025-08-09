@@ -1,3 +1,14 @@
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputLabel{
+    font-size: 0.8rem;
+    color: #343A40;
+    margin-bottom: 0.2rem;
+}
+
 .inputWrapper{
     height: 1.75rem;
     min-width: 20rem;
@@ -9,8 +20,6 @@
     padding: 0.25rem;
     border-radius: 8px;
 }
-
-
 
 .input{
     width: 100%;
