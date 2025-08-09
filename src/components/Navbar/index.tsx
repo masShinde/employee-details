@@ -17,7 +17,14 @@ import NavItem from "./components/NavItem";
 
 const navbarItems = [
   { icon: menuIcon, alt: "Menu" },
-  { icon: profileIcon, alt: "Profile", classNames: [styles.profileIcon] },
+  {
+    icon: profileIcon,
+    alt: "Profile",
+    iconStyle: {
+      width: "2rem",
+      height: "2rem",
+    },
+  },
   { icon: departmentIcon, alt: "Department" },
   { icon: notificationsIcon, alt: "Notifications" },
   { icon: professionalIcon, alt: "Experience" },
@@ -38,7 +45,11 @@ export default function Navbar(props: NavbarPropsType) {
         const Item = showDivider ? (
           <NavDivider key={index} />
         ) : (
-          <NavItem key={index} {...item} index={index} />
+          <NavItem
+            key={index}
+            {...item}
+            index={index}
+          />
         );
         return Item;
       })}
