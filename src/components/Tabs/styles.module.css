@@ -1,0 +1,24 @@
+.tabsContainer{
+    display: flex;
+    background-color: #E9ECEF;
+    border: 1px solid #E9ECEF;
+}
+
+.tabItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem 1rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+    color: #343A40;
+    cursor: pointer;
+}
+
+.activeTab{
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #1170CA;
+    color: #1170CA;
+}
+

@@ -1,0 +1,27 @@
+.inputWrapper{
+    height: 1.75rem;
+    min-width: 20rem;
+    background-color: #F8F9FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #E9ECEF;
+    padding: 0.25rem;
+    border-radius: 8px;
+}
+
+
+
+.input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #999FA7;
+    font-size: 0.875rem;
+    font-weight: 450;
+    padding: 0.25rem;
+    line-height: 1.25rem;
+    font-family: 'Inter', sans-serif;
+}

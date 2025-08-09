@@ -1,0 +1,66 @@
+.profileDetailsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profileDetails {
+  display: flex;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+.profileActionsContainer {
+}
+
+.userAvatar {
+  width: 4rem;
+  height: 4rem;
+}
+
+.userDetails {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem;
+}
+.userDetailsHeading {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.username {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #343a40;
+  margin-right: 0.6rem;
+}
+
+.socialContainer {
+  display: flex;
+}
+
+.socialIcon {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-right: 0.25rem;
+  cursor: pointer;
+}
+.userDetailsSubHeading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subHeadingText{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #495057;
+    margin-right: 1rem;
+}
+
+.buttonIcons{
+    color: #656E7A;
+    height: 0.7rem;
+    width: 0.7rem;
+}

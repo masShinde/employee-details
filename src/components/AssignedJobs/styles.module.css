@@ -1,0 +1,28 @@
+.assignedJobsContainer{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1rem;
+}
+
+.assignedJobsHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.assignedJobsTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #343A40;
+}
+
+.assignedJobsList{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+

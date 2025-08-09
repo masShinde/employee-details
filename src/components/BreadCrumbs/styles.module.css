@@ -1,0 +1,27 @@
+.breadCrumbsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.25rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.breadCrumbWrapper{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.breadCrumb{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #495057;
+    line-height: 1.25rem;
+    margin-right: 0.5rem;
+}
+
+.separator{
+    margin-right: 0.5rem;
+    width: 0.5rem;
+    height: 0.75rem;
+}

@@ -1,0 +1,15 @@
+.professionalDetailsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.keyValuePairContainer {
+  width: 50%;
+}
+
+@media (max-width: 720px) {
+  .keyValuePairContainer {
+    width: 100%;
+  }
+}

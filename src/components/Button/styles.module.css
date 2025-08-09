@@ -1,0 +1,33 @@
+
+.default{
+  padding: 0.5rem 0.8rem;
+  color: #343A40;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background-color: #FFFFFF;
+  border: 1px solid #CED4DA;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.primary {
+    background-color: #2570CA;
+    color: #FFFFFF;
+    margin-right: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.4rem;
+    border: none;
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+
+.error {
+  margin-right: 0.5rem;
+  color: #E03131;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: #FCEAEA;
+  border: 1px solid #F6C1C1;
+}

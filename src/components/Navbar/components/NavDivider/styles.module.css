@@ -1,0 +1,11 @@
+.dividerContainer{
+    height: 1.2rem;
+    width: 100%;
+}
+
+.itemDivider{
+    background-color: #1070CA;
+    width: 50%;
+    height: 2px;
+    border: 0;
+}
